@@ -24,7 +24,6 @@ app.post('gemini/pr', async (c) => {
 	const body = await c.req.json()
   const API_KEY = c.env.GEMINI_API_KEY;
 
-
   try {
 		const { userStoryName, description } = body;
 		const defaultPrompt = `You are a software development assistant. Your task is to generate concise and informative commit messages and descriptions for AWS CodeCommit and Github, based on user-provided information.  You MUST NOT invent or speculate about changes.  Only create the output based on the text provided after "What I did:".
