@@ -64,7 +64,7 @@ This will start a local server using `wrangler dev`.
 
 ## Deployment
 
-To deploy your Cloudflare Worker to production, ensure you have logged in Cloudflare Account (tecnologia@escoladnc.com.br). Then, run the following command:
+To deploy your Cloudflare Worker to production, ensure you have logged in Cloudflare Account. Then, run the following command:
 
 ```sh
 npm run deploy
@@ -76,7 +76,7 @@ This will deploy your worker to Cloudflare's edge network.
 
 The worker exposes the following endpoint:
 
-- `POST /webhook`: Receives GitHub webhook events and processes PR-related actions
+- `POST /gemini/pr`: Receives Frontend webhook with Github data and processes PR-related actions
 
 ## Contributing
 
